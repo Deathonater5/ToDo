@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="eLZ-zR-Ynr" id="p8H-yW-Zml"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ToDo" id="7fW-6T-o4c" userLabel="ToDo"/>
+                    <navigationItem key="navigationItem" title="ToDo" id="7fW-6T-o4c" userLabel="ToDo">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZAi-mJ-zDz">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="eLZ-zR-Ynr" id="Go8-h6-nL7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5y-jh-0mI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,8 +53,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="84a-W7-Nir">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="21"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
